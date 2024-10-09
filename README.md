@@ -38,9 +38,7 @@ Como Executar o Projeto
 
     Instale as bibliotecas necessárias:
 
-    bash
-
-pip install pandas numpy openpyxl nbformat ipykernel plotly
+    pip install pandas numpy openpyxl nbformat ipykernel plotly
 
 Execute o arquivo principal do projeto para carregar e analisar os dados.
 
