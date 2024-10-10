@@ -1,45 +1,38 @@
-Este projeto foi desenvolvido para uma empresa com uma base de mais de 800 mil clientes. O objetivo principal é identificar os principais motivos pelos quais os clientes cancelam o serviço e propor soluções eficientes para reduzir o número de cancelamentos.
-Objetivo do Projeto
+Análise de Cancelamentos de Clientes
 
-Analisar a base de dados de clientes da empresa, composta principalmente por clientes inativos (aqueles que já cancelaram o serviço), para identificar padrões nos cancelamentos. Com base nos insights obtidos, foram sugeridas ações específicas que podem ajudar a reduzir a taxa de cancelamento.
-Principais Soluções Propostas
+Este projeto visa identificar os principais motivos de cancelamento de clientes em uma empresa com mais de 800 mil clientes. A partir dessa análise, são propostas ações para reduzir a taxa de cancelamentos.
+Bibliotecas usadas:
 
-    Clientes com contrato mensal:
-        Todos os clientes com contratos mensais cancelaram.
-        Solução: Oferecer descontos para migrar clientes para contratos anuais ou trimestrais.
+    pandas: Manipulação de dados.
+    numpy: Suporte para operações matemáticas.
+    openpyxl: Leitura de arquivos Excel.
+    nbformat e ipykernel: Suporte para notebooks Jupyter.
+    plotly: Criação de gráficos interativos.
 
-    Clientes que ligam para o call center mais de 4 vezes:
-        Esses clientes tendem a cancelar o serviço.
-        Solução: Melhorar os processos de atendimento, com o objetivo de resolver os problemas dos clientes em, no máximo, 3 ligações.
+Como usar:
 
-    Clientes que atrasaram mais de 20 dias no pagamento:
-        Atrasos superiores a 20 dias estão fortemente associados ao cancelamento.
-        Solução: Implementar uma política de regularização de atrasos em até 10 dias, contando com o apoio da equipe financeira.
-
-Ferramentas e Bibliotecas Utilizadas
-
-    pandas: Para a manipulação de dados.
-    numpy: Suporte para operações numéricas e arrays.
-    openpyxl: Leitura e gravação de arquivos Excel.
-    nbformat e ipykernel: Integração e execução em notebooks.
-    plotly: Visualização de dados interativa, para gerar gráficos e histogramas das análises.
-
-Etapas do Projeto
-
-    Carregamento dos Dados: A base de dados de cancelamentos foi carregada e processada com a remoção de valores duplicados e nulos, além da exclusão de colunas irrelevantes como CustomerID.
-
-    Análise Exploratória dos Dados: Foram gerados gráficos e histogramas para cada uma das variáveis da base de dados, com o objetivo de entender quais fatores mais influenciam o cancelamento.
-
-    Propostas de Ação: Com base na análise, foram identificados três fatores principais que influenciam os cancelamentos. Para cada um, foi proposta uma ação corretiva visando reduzir a taxa de cancelamento.
-
-    Simulação Pós-Ajustes: Após simular a aplicação das ações sugeridas, a taxa de cancelamento foi reduzida de 56.7% para 18.4%.
-
-Como Executar o Projeto
-
-    Instale as bibliotecas necessárias:
+    Instale as dependências necessárias:
 
     pip install pandas numpy openpyxl nbformat ipykernel plotly
 
-Execute o arquivo principal do projeto para carregar e analisar os dados.
+    Certifique-se de que o arquivo tabela_cancelamentos.csv está no diretório correto.
+    Execute o script para analisar as causas dos cancelamentos e gerar gráficos.
 
-Modifique ou aplique novos filtros e analise as mudanças nos resultados com base nas ações sugeridas.
+Etapas do Processo:
+
+    Limpeza dos dados:
+        Colunas irrelevantes e valores nulos/duplicados são removidos.
+
+    Análise de cancelamentos:
+        A quantidade e a porcentagem de clientes que cancelaram são calculadas.
+
+    Visualização de dados:
+        Gráficos interativos são gerados para cada coluna, destacando a relação entre variáveis como duracao_contrato, ligacoes_callcenter e dias_atraso com o cancelamento.
+
+    Soluções propostas:
+        Contrato mensal: Todos os clientes com contrato mensal cancelaram. Solução: oferecer descontos para planos anuais e trimestrais.
+        Ligações ao call center: Clientes que ligaram mais de 4 vezes cancelaram. Solução: resolver problemas em no máximo 3 ligações.
+        Atraso de pagamento: Clientes que atrasaram mais de 20 dias cancelaram. Solução: política para resolver atrasos em até 10 dias.
+
+    Impacto das ações:
+        Após aplicar as soluções propostas, a taxa de cancelamento foi reduzida de 56,7% para 18,4%.
