@@ -1,6 +1,7 @@
 Análise de Cancelamentos de Clientes
 
 Este projeto visa identificar os principais motivos de cancelamento de clientes em uma empresa com mais de 800 mil clientes. A partir dessa análise, são propostas ações para reduzir a taxa de cancelamentos.
+
 Bibliotecas usadas:
 
     pandas: Manipulação de dados.
