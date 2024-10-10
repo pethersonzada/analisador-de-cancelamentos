@@ -9,7 +9,7 @@
 import pandas as pd
 import plotly.express as px
 
-tabela = pd.read_csv("projetos-python/python-insights/tabela_cancelamentos.csv")
+tabela = pd.read_csv("projetos-python/python-insights/tabela_cancelamentos.csv") #(CASO NÃO FUNCIONAR, TENTE ALTERAR O DIRETÓRIO!!)
 
 tabela = tabela.drop(columns="CustomerID") #Retiro a coluna CustumerID (Coluna inútil para a análise em questão).
 tabela = tabela.dropna() #Retiro os valores nulos da tabela. (NaN = Not a Number).
