@@ -4,6 +4,8 @@
 
 #!pip install pandas numpy openpyxl nbformat ipykernel plotly
 
+# ATENÇÃO, LEIA ANTES DE EXECUTAR!!! Quando executar o código, abrirá 11 abas em seu navegador demonstrando todos os gráficos criados.
+
 #Importando bibliotecas.
 
 import pandas as pd
